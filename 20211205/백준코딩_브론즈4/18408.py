@@ -1,0 +1,5 @@
+# 3 つの整数 (Three Integers)
+
+a, b, c = map(int, input().split())
+
+print(2 if a+b+c > 4 else 1)
