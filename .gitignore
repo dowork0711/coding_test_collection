@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,python
+# Created by https://www.toptal.com/developers/gitignore/api/python,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,macos
 
 ### macOS ###
 # General
@@ -8,11 +8,11 @@
 .AppleDouble
 .LSOverride
 
-# PyCharm
-.idea
-
 # Icon must end with two \r
 Icon
+
+# PyCharm
+.idea
 
 
 # Thumbnails
@@ -174,4 +174,4 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,python
+# End of https://www.toptal.com/developers/gitignore/api/python,macos
