@@ -1,4 +1,5 @@
 # 사탕 선생 고창영
+# https://www.acmicpc.net/problem/2547
 
 import sys
 
@@ -21,6 +22,15 @@ for _ in range(T):
     print("YES")
   else:
     print("NO")
+
+
+
+
+
+
+
+
+
 
 
 
