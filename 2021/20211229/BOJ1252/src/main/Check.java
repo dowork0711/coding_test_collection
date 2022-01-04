@@ -1,5 +1,6 @@
 package main;
 
+import java.io.*;
 import java.util.Scanner;
 
 /*
@@ -10,12 +11,13 @@ import java.util.Scanner;
 
 public class Check {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Scanner sc = new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String fNum = sc.next();
-        String sNum = sc.next();
+        String fNum = br.readLine();
+        String sNum = br.readLine();
 
         long fRep = 0;
         long sRep = 0;
@@ -23,7 +25,7 @@ public class Check {
         long sum;
 
         if(fNum.equals("0") && sNum.equals("0")) {
-            System.out.println(0);
+            bw.write(0);
         } else {
             // 첫번째 입력받는 수를 10진수로 변환
             for (int i = fNum.length()-1; i >= 0; i--) {
