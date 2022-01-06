@@ -1,3 +1,6 @@
 {
-  "java.project.sourcePaths": ["20211220", "20211222/Java/Main"]
+  "java.project.sourcePaths": [
+    "CodeUp/5주차 과제/6099/src",
+    "CodeUp/5주차 과제/6099"
+  ]
 }
