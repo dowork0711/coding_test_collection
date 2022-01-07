@@ -22,6 +22,7 @@ public class Main {
         // 정렬
         Arrays.sort(numArr);
 
+        /*
         for (int i = 0; i < numArr.length; i++) {
             for (int j = 1; j < numArr.length; j++) {
                 int temp;
@@ -32,6 +33,7 @@ public class Main {
                 }
             }
         }
+        */
 
         for (int num : numArr) {
             System.out.println(num);

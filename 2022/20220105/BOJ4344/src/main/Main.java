@@ -15,7 +15,7 @@ public class Main {
             int[] scoreArr = new int [cntStudent];  // 점수 배열
 
             double avg = 0;
-            double overAvg = 0;
+            double overAvg;
             int cnt = 0;
             for (int j = 0; j < scoreArr.length; j++) {
                 int score = sc.nextInt();
