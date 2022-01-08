@@ -1,5 +1,8 @@
 # 6097: 설탕과자 뽑기
 
+from sys import stdin
+input = stdin.readline
+
 h, w = map(int, input().split())
 num = int(input())
 
