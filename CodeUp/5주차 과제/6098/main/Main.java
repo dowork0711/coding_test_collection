@@ -15,6 +15,7 @@ public class Main {
 
         sc.close();
 
+        /*
         // 출발점
         int start = 1;  // 세로
         int end = 0;    // 종료
@@ -36,6 +37,30 @@ public class Main {
                 }
             } else {
                 break;
+            }
+        }
+        */
+
+        int x = 1;
+        int y = 1;
+
+        while (true) {
+            if (routesArr[x][y] == 0) {     // 지나갈 수 있는 곳
+                routesArr[x][y] = 9;
+            } else if (routesArr[x][y] == 2) {  // 먹이가 있는 곳
+                routesArr[x][y] = 9;
+                break;
+            }
+
+            // 장애물 또는 벽(1)이거나 이미 지나온 길
+            if ((routesArr[x][y+1] == 1 && routesArr[x+1][y] == 1)|| (x == 9 && y == 9)) {
+                break;
+            }
+
+            if (routesArr[x][y+1] != 1) {   // y축방향이 1이 아니라면 이동
+                y += 1;
+            } else if (routesArr[x+1][y] != 1) {    // x축 방향이 1이 아니라면 이동
+                x += 1;
             }
         }
 
