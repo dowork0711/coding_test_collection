@@ -1,11 +1,13 @@
 # 6091: 함께 문제 푸는 날
 
-'''
+
 # codeup의 python 컴파일러 버전이 3.9미만이라 lcm함수 미지원
+'''
 import math
 a, b, c = map(int, input().split())
 print(math.lcm(a, b, c))
 '''
+
 
 a, b, c = map(int, input().split())
 
