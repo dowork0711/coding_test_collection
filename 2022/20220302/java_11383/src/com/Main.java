@@ -8,19 +8,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        // 입력받기
         int n = sc.nextInt();
         int m = sc.nextInt();
 
         StringBuilder firImg = new StringBuilder();
         StringBuilder secImg = new StringBuilder();
-
-        /*
-            String str1 = "abc";
-            String str2 = "def";
-
-            str1 + str2
-        */
 
         for (int i = 0; i < n; i++) {
             firImg.append(sc.next());
@@ -32,10 +24,6 @@ public class Main {
 
         boolean checker = true;
 
-        /*
-            ABCDE
-            AABBCCDDEE
-        */
         for (int i = 0; i < n*m*2; i++) {
             if(secImg.charAt(i) != firImg.charAt(i/2)) {
                 checker = false;
