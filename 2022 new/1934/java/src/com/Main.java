@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/* 이거를 코틀린으로 바꿔보겠읍니다. */
+
 public class Main {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int t = Integer.parseInt(br.readLine());
-
-//        int[] result = new int [t];
 
         StringTokenizer st;
         StringBuilder sb = new StringBuilder();
@@ -21,15 +21,9 @@ public class Main {
             int p = Integer.parseInt(st.nextToken());
             int q = Integer.parseInt(st.nextToken());
 
-//            result[i] = getLcm(p, q);
             int res = getLcm(p, q);
             sb.append(res).append("\n");
         }
-
-//        StringBuilder sb = new StringBuilder();
-//        for (int num : result) {
-//            sb.append(num).append("\n");
-//        }
 
         System.out.println(sb);
     }
